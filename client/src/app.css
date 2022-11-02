@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Century Gothic', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: rgb(27, 27, 27);
+  /* background-image: url(./lib/images/pattern4.png); */
+}
+
+#brand {
+  font-family: 'Satisfy', cursive;
+}
+
+#store,
+#artists,
+#charities {
+  background-image: url(./lib/images/pattern4.png);
+  background-size: 400px;
+}
+
+#carousel-left,
+#carousel-right {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+#banner:hover > #carousel-left {
+  opacity: 1;
+}
+
+#banner:hover > #carousel-right {
+  opacity: 1;
+}
