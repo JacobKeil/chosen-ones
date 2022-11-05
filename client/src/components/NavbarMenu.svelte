@@ -1,6 +1,5 @@
 <script>
   import { fly } from 'svelte/transition';
-  import { mdiClose, mdiInstagram, mdiTwitter } from '@mdi/js';
   import { createEventDispatcher } from 'svelte';
 
   export let menuOpen;
@@ -23,27 +22,11 @@
   >
     <div class="h-16 px-3 flex justify-between items-center">
       <!-- svelte-ignore a11y-click-events-have-key-events -->
-      <svg
-        class="h-6 w-6 fill-black hover:orange block cursor-pointer tablet:hidden"
-        on:click={toggle}
-      >
-        <path d={mdiClose} />
-      </svg>
+      <box-icon class="fill-black cursor-pointer" name='x' on:click={toggle}></box-icon>
       <div class="flex space-x-2">
         <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <svg
-          class="h-6 w-6 fill-black hover:orange block cursor-pointer tablet:hidden"
-          on:click={toggle}
-        >
-          <path d={mdiInstagram} />
-        </svg>
-        <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <svg
-          class="h-6 w-6 fill-black hover:orange block cursor-pointer tablet:hidden"
-          on:click={toggle}
-        >
-          <path d={mdiTwitter} />
-        </svg>
+        <box-icon class="fill-black" type='logo' name='instagram'></box-icon>
+        <box-icon class="fill-black" type='logo' name='twitter'></box-icon>
       </div>
     </div>
     <div class="border-none px-4">

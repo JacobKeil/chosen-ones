@@ -1,6 +1,4 @@
 <script>
-  import { mdiMapMarkerRadius } from '@mdi/js';
-
   export let article;
   const tags = article.tags.split(', ');
 </script>
@@ -12,12 +10,7 @@
     alt=""
   />
   <div class="p-4 bg-[#fff] text-black rounded-b-md">
-    <div class="flex justify-left items-center space-x-1 text-green">
-      <svg class="h-6 w-6 fill-green">
-        <path d={mdiMapMarkerRadius} />
-      </svg>
-      <h2>Tampa</h2>
-    </div>
-    <h2>{article.title}</h2>
+    <h2 class="text-green font-semibold">{article.title}</h2>
+    <p class="text-[14px]">{article.body_html.slice(0, 80)}... <a class="underline" href="/">Read more</a></p>
   </div>
 </div>

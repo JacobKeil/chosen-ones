@@ -1,5 +1,4 @@
 <script>
-  import { mdiChevronLeft, mdiChevronRight } from '@mdi/js';
   import image1 from '$lib/images/banner2.jpg';
   import image2 from '$lib/images/banner3.jpg';
   import image3 from '$lib/images/banner4.jpg';
@@ -34,9 +33,7 @@
     class="absolute flex justify-center items-center top-[47%] left-4 p-1 z-10 rounded-full bg-white/75 cursor-pointer"
     on:click={backwardSlide}
   >
-    <svg class="h-6 w-6 fill-black">
-      <path d={mdiChevronLeft} />
-    </svg>
+  <box-icon class="fill-black cursor-pointer" name='chevron-left'></box-icon>
   </div>
   <!-- svelte-ignore a11y-click-events-have-key-events -->
   <div
@@ -44,9 +41,7 @@
     class="absolute flex justify-center items-center top-[47%] right-4 p-1 z-10 rounded-full bg-white/75 cursor-pointer"
     on:click={forwardSlide}
   >
-    <svg class="h-6 w-6 fill-black">
-      <path d={mdiChevronRight} />
-    </svg>
+  <box-icon class="fill-black cursor-pointer"  name='chevron-right'></box-icon>
   </div>
   <div id="image" class="object-cover h-full w-full">
     <img class="object-cover h-full w-full" src={images[currentImage]} alt="" />

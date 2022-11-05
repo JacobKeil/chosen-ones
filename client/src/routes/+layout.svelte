@@ -4,7 +4,7 @@
   import NavbarMenu from '../components/NavbarMenu.svelte';
   import Footer from '../components/Footer.svelte';
   import logo from '$lib/logo.svg';
-  import { getProducts, getArticles } from '../store';
+  // import { getProducts, getArticles } from '../store';
   import { onMount } from 'svelte';
 
   let menuOpen = false;
@@ -12,8 +12,8 @@
   let yScroll;
 
   onMount(async () => {
-    await getProducts();
-    await getArticles();
+    // await getProducts();
+    // await getArticles();
     setTimeout(() => {
       loading = false;
     }, 3000);

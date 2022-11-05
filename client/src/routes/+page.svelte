@@ -1,6 +1,5 @@
 <script>
   import Banner from '../components/Sections/Banner.svelte';
-  import Socials from '../components/Sections/Socials.svelte';
   import Mission from '../components/Sections/Mission.svelte';
   import FeaturedArtists from '../components/Sections/FeaturedArtists.svelte';
   import Store from '../components/Sections/Store.svelte';
@@ -11,7 +10,6 @@
 </script>
 
 <Banner />
-<!-- <Socials /> -->
 <FeaturedArtists {articles} />
 <Mission />
 <Store {products} />
