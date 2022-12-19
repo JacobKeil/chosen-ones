@@ -6,7 +6,7 @@
   import Blog from '../components/Sections/Blog.svelte';
   import { articles, products } from '../store';
 
-  console.log(articles);
+  // console.log(articles);
 </script>
 
 <Banner />

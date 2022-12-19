@@ -3,7 +3,11 @@
   let textColor = product.variants[0].inventory_quantity <= 5 ? 'text-red' : 'text-green';
 </script>
 
-<div class="text-black rounded-sm shadow-xl cursor-pointer transition hover:-translate-y-1">
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<div
+  class="text-black rounded-sm shadow-xl cursor-pointer transition hover:-translate-y-1"
+  on:click
+>
   <img class="aspect-video object-cover w-full rounded-t-md" src={product.images[0].src} alt="" />
   <div class="p-4 bg-white rounded-b-md">
     <h2>{product.title}</h2>

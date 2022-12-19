@@ -14,6 +14,10 @@ html {
   /* background-image: url(./lib/images/pattern4.png); */
 }
 
+.scroll-lock {
+  overflow: hidden;
+}
+
 #brand {
   font-family: 'Satisfy', cursive;
 }
